@@ -1,0 +1,7 @@
+{
+  "name": "pinterestApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
