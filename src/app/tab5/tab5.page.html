@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="logo-pinterest" slot="end" color="danger" style="height: 30px; width: 30px;"></ion-icon>
+    <ion-button style="height: 30px; width: 35px;" color="dark" shape="round">Todo</ion-button>    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <h4 style="font-size:17px; text-align:center; font-weight:bold">Categoria de Imagenes</h4>
+    <ion-item *ngFor="let l of listados" [routerLink]="l.redirectTo" (click)="mostrar()">
+      <ion-icon slot="start" color="success" [name]='l.icon'> </ion-icon>
+      <ion-button expand="block" color="warning"> {{ l.name }}</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

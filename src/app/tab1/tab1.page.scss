@@ -1,0 +1,61 @@
+ion-title {
+    font-weight: 600;
+}
+
+.slide {
+    width: 100%;
+    height: 80px;
+    box-shadow: none;
+    border-radius: 12px;
+    
+    img {
+        object-fit: cover;
+        width: 100%;
+        transform: scale(1.1, 1.1) rotate(1deg);
+        transition: 600ms all ease-in-out;
+    }
+}
+
+.swiper-slide-active {
+    transform: scale(1.05, 1.05);
+
+    .slide {
+        img {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.swiper-slide {
+    transition: 400ms all ease-in-out;
+}
+
+/* Imagenes */
+.imagenes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes:hover imagenes{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+
+h3{
+    font-family: 'Caveat', cursive;
+    color: rgb(238, 9, 9);
+    text-shadow: 2px 2px 2px blue;
+    text-align: center;
+    font-size: 50px;
+}
+
+ion-toggle {
+    --background: #000;
+    --background-checked: #ffffff;
+  
+    --handle-background: #ffffff;
+    --handle-background-checked: #000;
+    font-size: 8px;
+  }

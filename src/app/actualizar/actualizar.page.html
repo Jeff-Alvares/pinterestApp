@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <!-- Imagenes-->
+<ion-grid>
+  <ion-row>
+    <p style="font-size: 11px">Tal vez te gusten estos nuevos pines en tu feed de inicio</p>
+    <ion-col size="4" *ngFor="let imagen of imagenes">
+      <img class="imagenes" src="{{imagen}}" style="border-radius: 20%;"> 
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+ <!-- Imagenes-->
+ <ion-grid>
+  <ion-row>
+    <p style="font-size: 11px">Tienes 2 pines nuevos esperandote</p>
+    <ion-col size="4" *ngFor="let imagen1 of imagenes1">
+      <img class="imagenes" src="{{imagen1}}" style="border-radius: 20%;"> 
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+  <!-- fab placed to the bottom end -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button href="https://github.com/Jeff-Alvares">
+        <ion-icon style="font-size: 35px" name="logo-github" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="font-size: 12px; text-align: center;">Actualizaciones del dia</ion-title>
+  </ion-toolbar>
+</ion-footer>

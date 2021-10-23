@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="logo-pinterest" slot="end" color="danger" style="height: 30px; width: 30px;"></ion-icon>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Wallpapers</ion-title>  
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<!-- Imagenes-->
+<ion-grid>
+  <ion-row>
+    <ion-col size="6" *ngFor="let imagen of imagenes">
+      <img class="imagenes" src="{{imagen}}" > 
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

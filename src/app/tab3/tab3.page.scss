@@ -1,0 +1,45 @@
+.message{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+}
+
+.other-message{
+    background: #b85402;
+    color: rgb(255, 255, 255);
+}
+
+.my-message{
+    background: #71f108;
+    color: rgb(0, 0, 0);
+}
+
+.time{
+color: #000000;
+float: right;
+font-size: small;
+}
+
+.message-input{
+    width: 100%;
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    resize: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+.msg-btn{
+--padding-start: 0.5em; 
+--padding-end: 0.5em;
+    size: 35px;
+    color:rgb(7, 255, 7)
+}
+
+.footer{
+    top: 75%;
+   
+}
